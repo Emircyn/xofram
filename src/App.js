@@ -1,24 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react';
+import { Header, Hero, Services } from './components';
 
 function App() {
+  const [data, setData] = useState([
+    {
+      id: 1,
+      url: '/img-2.png',
+      name: 'Vegetable',
+    },
+    {
+      id: 2,
+      url: '/img-3.png',
+      name: 'Fruit',
+    },
+    {
+      id: 3,
+      url: '/img-4.png',
+      name: 'Salad',
+    },
+    {
+      id: 4,
+      url: '/img-5.png',
+      name: 'Berries',
+    },
+    {
+      id: 5,
+      url: '/img-6.png',
+      name: 'Milk',
+    },
+  ]);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className='bg-header-section bg-cover'>
+        <Header />
+        <Hero />
+      </div>
+      <Services data={data} />
+    </>
   );
 }
 
