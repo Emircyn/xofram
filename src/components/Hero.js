@@ -62,7 +62,7 @@ const Hero = () => {
                   IT IS A LONG ESTABLISHED FACT THAT A READER WILL BE DISTRACTED
                   BY THE READABLE CONTENT
                 </p>
-                <button className='bg-linkHover max-w-[170px] hover:bg-white hover:text-black text-white font-bold py-2 px-4 rounded'>
+                <button className='bg-linkHover max-w-[170px] hover:bg-white hover:text-black text-white font-bold py-4 px-8  rounded'>
                   Read More
                 </button>
               </div>
@@ -105,7 +105,7 @@ const Hero = () => {
                   IT IS A LONG ESTABLISHED FACT THAT A READER WILL BE DISTRACTED
                   BY THE READABLE CONTENT
                 </p>
-                <button className='bg-linkHover max-w-[170px] hover:bg-white hover:text-black text-white font-bold py-2 px-4 rounded'>
+                <button className='bg-linkHover max-w-[170px] hover:bg-white hover:text-black text-white font-bold py-4 px-8  rounded'>
                   Read More
                 </button>
               </div>

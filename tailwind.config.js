@@ -9,6 +9,9 @@ module.exports = {
       heroText: '#C5D512',
       black: '#000',
       servicesText: '#143e07',
+      aboutFarm: '#123c06',
+      aboutFarmPar: '#262626',
+      backgroundGreen: '#164006',
     },
     extend: {
       backgroundImage: {
