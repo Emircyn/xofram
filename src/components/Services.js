@@ -1,4 +1,4 @@
-const Services = ({ data }) => {
+const Services = ({ propsInfo }) => {
   return (
     <>
       <div className='pt-24'></div>
@@ -8,19 +8,19 @@ const Services = ({ data }) => {
             Services
           </h1>
           <div className='grid lg:w-[850px] lg:grid-cols-3 pt-8 grid-cols-1 gap-3'>
-            {data.map((data) => (
+            {propsInfo.map((propsInfo) => (
               <div
-                key={data.id}
+                key={propsInfo.id}
                 className='relative group flex items-center justify-center w-full h-full rounded '
               >
                 <div className='absolute  invisible group-hover:visible bg-white bg-opacity-20 w-full h-full'></div>
                 <img
-                  src={data.url}
+                  src={propsInfo.url}
                   className='object-cover flex-1 w-[250px]'
-                  alt={data.name}
+                  alt={propsInfo.name}
                 />
                 <h2 className='absolute invisible group-hover:visible  group-hover:text-black font-bold text-white text-xl text-bold'>
-                  {data.name}
+                  {propsInfo.name}
                 </h2>
               </div>
             ))}

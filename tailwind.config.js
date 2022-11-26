@@ -11,11 +11,15 @@ module.exports = {
       servicesText: '#143e07',
       aboutFarm: '#123c06',
       aboutFarmPar: '#262626',
+      iconColor: '#8aa082',
       backgroundGreen: '#164006',
     },
     extend: {
       backgroundImage: {
         'header-section': "url('img/banner-bg.png')",
+      },
+      boxShadow: {
+        '3xl': '0px -4px 26px -11px',
       },
     },
   },

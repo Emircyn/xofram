@@ -5,38 +5,38 @@ import {
   Hero,
   Resources,
   Services,
+  Blog,
 } from './components';
-
 function App() {
   const data = [
     {
       id: 1,
-      url: '/img-2.png',
+      url: 'https://picsum.photos/1920.webp',
       name: 'Vegetable',
     },
     {
       id: 2,
-      url: '/img-3.png',
+      url: 'https://picsum.photos/1920.webp',
       name: 'Fruit',
     },
     {
       id: 3,
-      url: '/img-4.png',
+      url: 'https://picsum.photos/1920.webp',
       name: 'Salad',
     },
     {
       id: 4,
-      url: '/img-5.png',
+      url: 'https://picsum.photos/1920.webp',
       name: 'Berries',
     },
     {
       id: 5,
-      url: '/img-6.png',
+      url: 'https://picsum.photos/1920.webp',
       name: 'Milk',
     },
     {
       id: 6,
-      url: '/img-6.png',
+      url: 'https://picsum.photos/1920.webp',
       name: 'Milk',
     },
   ];
@@ -63,16 +63,19 @@ function App() {
         't is a long establi shed fact that a reader will be distracted by the readable content',
     },
   ];
+
   return (
     <>
       <div className='bg-header-section bg-cover'>
         <Header />
         <Hero />
       </div>
-      <Services data={data} />
+
+      <Services propsInfo={data} />
       <AboutFarm />
       <Resources />
       <Choose data={ChooseData} />
+      <Blog />
     </>
   );
 }

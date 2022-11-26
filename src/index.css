@@ -7,6 +7,6 @@
     font-family: Poppins;
   }
   * {
-    transition: ease all 0.5s !important;
+    transition: ease all 0.2s;
   }
 }

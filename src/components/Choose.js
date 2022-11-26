@@ -4,10 +4,10 @@ const Choose = ({ data }) => {
   return (
     <>
       <div className='pt-24'></div>
-      <div className='container mx-auto'>
+      <div className='container mx-auto px-4'>
         <div>
           <div className='flex flex-col justify-center items-center'>
-            <h1 className='text-5xl text-aboutFarm font-bold mb-3'>
+            <h1 className='lg:text-5xl text-3xl text-aboutFarm font-bold mb-3'>
               WHY CHOOSE US
             </h1>
 
@@ -17,18 +17,18 @@ const Choose = ({ data }) => {
             </p>
           </div>
           <div className='pt-24'></div>
-          <div className='flex justify-between mb-10'>
+          <div className='flex flex-wrap lg:flex-nowrap gap-y-9 justify-between mb-10'>
             {data.map((data) => (
               <div
                 key={data.id}
                 className={`${
-                  data.id === 2 && 'scale-110'
+                  data.id === 2 && 'lg:scale-105'
                 } w-[350px] text-center gap-y-5 flex flex-col justify-center  items-center`}
               >
                 <div>
                   <img src={data.url} alt={data.name} />
                 </div>
-                <div>
+                <div className='max-w-[300px]'>
                   <h1 className='text-2xl text-aboutFarmPar mb-2'>
                     {data.name}
                   </h1>
@@ -38,7 +38,7 @@ const Choose = ({ data }) => {
             ))}
           </div>
           <div className='items-center justify-center flex'>
-            <button className='bg-linkHover hover:bg-black text-white font-bold py-4 px-8  rounded'>
+            <button className='bg-linkHover hover:bg-black text-white font-bold py-3 px-6  rounded'>
               Read More
             </button>
           </div>
